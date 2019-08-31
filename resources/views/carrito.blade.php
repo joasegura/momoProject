@@ -77,4 +77,4 @@
         $('.main-nav').slideToggle('slow');
       })
     </script>
-@endsection
+  @endsection
