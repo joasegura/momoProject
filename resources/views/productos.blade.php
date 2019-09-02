@@ -7,18 +7,15 @@
     <div class="container-home">
       <section class="contenedor-productos">
         <article class="producto">
-          <ul style="display:flex">
-            @forelse ($productos as $producto)
-              <li>
-                <p>{{$producto->imagen}}</p>
-                <p>{{$producto->nombre}}</p>
-                <p>{{$producto->precio}}</p>
-                <p>{{$producto->talle}}</p>
-              </li>
-            @empty
-              <p>No hay productos</p>
-            @endforelse
-          </ul>
+          @forelse ($productos as $producto)
+          <div class="foto-producto">
+              <img src="{{Storage::url($producto->imagen)}}">
+              <h4>{{$producto->nombre}} <br> {{$producto->precio}}</h4>
+              <a class="comprar"href="#">Comprar<i class="fas fa-cart-plus"></i></a>
+           </div>
+         @empty
+           <p>No hay productos</p>
+         @endforelse
         </article>
       </section>
     </div>

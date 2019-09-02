@@ -31,7 +31,7 @@
         <div class="contenedor-principal">
         <header class="cabecera-principal">
 
-          <h1 class="logo">momo</h1>
+          <a href="{{ url('/') }}"><h1 class="logo">momo</h1></a>
           <ul class="login-navbar">
 
             <li>

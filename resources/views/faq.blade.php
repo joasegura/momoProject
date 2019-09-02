@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-{{-- carrito --}}
+{{-- faq --}}
+<h2 class="title-cloth">Preguntas /</h2>
 
 
    <!-- footer -->

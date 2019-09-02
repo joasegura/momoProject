@@ -11,4 +11,10 @@ class Producto extends Model
   public $primaryKey = "id";
   public $timestamps = false;
   public $guarded = [];
+
+  public function categoria()
+  {
+      return $this->belongsTo(Categoria::class);
+  }
+
 }

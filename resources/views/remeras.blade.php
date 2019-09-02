@@ -101,7 +101,7 @@
      <nav class="main-footer">
         <ul class="footer-flex">
          <li><a href="#">Home</a></li>
-         <li><a href="#">Preguntas</a></li>
+         <li><a href="/faq">Preguntas</a></li>
          <li><a href="#">Sucursales</a></li>
          <li><a href="#">Contacto</a></li>
         </ul>

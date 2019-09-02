@@ -19,6 +19,10 @@ Route::get('/index', function () {
   return view('index');
 });
 
+Route::get('/faq', function () {
+  return view('faq');
+});
+
 Route::get('/camperas', function () {
   return view('camperas');
 });
@@ -59,11 +63,9 @@ Route::post("/borrarProducto", "ProductosController@borrar");
 
 Route::get("/productos", "ProductosController@listado");
 
+Route::get("/productos/{categoria}", "ProductosController@listadoPorCategoria");
 
 
-Route::get('cart', 'ProductsController@cart');
-
-Route::get('add-to-cart/{id}', 'ProductsController@addToCart');
 
 Route::get("/carrito", function(){
   return view("carrito");
