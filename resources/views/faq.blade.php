@@ -4,6 +4,33 @@
 {{-- faq --}}
 <h2 class="title-cloth">Preguntas /</h2>
 
+<div class="pregunta">
+  <h4>Cómo comprar?</h4>
+  <div class="respuesta">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+  </div>
+</div>
+
+<div class="pregunta">
+  <h4>Envíos</h4>
+  <div class="respuesta">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+  </div>
+</div>
+
+<div class="pregunta">
+  <h4>Formas de pago</h4>
+  <div class="respuesta">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+  </div>
+</div>
+
+<div class="pregunta">
+  <h4>Dónde nos encontramos?</h4>
+  <div class="respuesta">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+  </div>
+</div>
 
    <!-- footer -->
     <div class="container-footer">

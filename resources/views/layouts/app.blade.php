@@ -16,10 +16,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
-
     <!-- Styles -->
-    <link href="{{ asset('css/test.css') }}" rel="stylesheet">
     <link href="{{ asset('css/index.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/test.css') }}" rel="stylesheet">
 </head>
 <body>
 
@@ -31,16 +30,17 @@
         <div class="contenedor-principal">
         <header class="cabecera-principal">
 
-          <a href="{{ url('/') }}"><h1 class="logo">momo</h1></a>
+          <a href="{{ url('/') }}"><h1 class="logo">MOMO</h1></a>
           <ul class="login-navbar">
 
             <li>
               <div class="container-search">
                   <form action="/sfsdfsdf" method="get" class="search-form">
                       <div class="search-form-wrapper">
-                    		<input type="text" name="search" placeholder="search">
-                      	<button type="submit" class="glyphicon glyphicon-search"></button>
-                    	</div>
+                    		<input type="text" name="search" placeholder="search" >
+                        {{-- <input<i class="fas fa-search"></i> --}}
+                      </div>
+
                   </form>
               </div>
             </li>

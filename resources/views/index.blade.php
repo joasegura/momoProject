@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
- <body>
-
  <!-- banner -->
  <section class="banner">
    <img src="images/portada1.jpg" alt="banner">

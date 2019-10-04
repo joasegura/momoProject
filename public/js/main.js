@@ -24,6 +24,40 @@ fetch("https://restcountries.eu/rest/v2/all")
    console.log(error);
 });
 
+
+
+var provincia = document.getElementById('provincias')
+provincia.style.display = "none";
+var selectProv = document.querySelector('select[id=prov]');
+fetch('https://dev.digitalhouse.com/api/getProvincias')
+   .then(function(respuesta){
+     return respuesta.json();
+   })
+   .then(function(provincias){
+     for (var i = 0; i < provincias.data.length; i++) {
+       var nuevaProv = document.createElement('option');
+       nuevaProv.setAttribute('value', provincias.data[i].state);
+       nuevaProv.innerText = provincias.data[i].state;
+       selectProv.append(nuevaProv);
+     }
+   })
+   .catch(function(error){
+     console.log(error)
+   })
+
+     selectPaises.onchange = function() {
+   if (this.value === "Argentina") {
+     var provincia = document.getElementById('provincias')
+     var hdosProv = document.getElementById('hdosProv');
+     hdosProv.innerText = "Provincias:";
+     provincia.style.display = "block";
+     } else {
+       var provincia = document.getElementById('provincias')
+       provincia.style.display = "none";
+   }
+ };
+
+
 var campoNombre = document.getElementById('divName');
 var campoEmail = document.getElementById('divEmail');
 var campoPass = document.getElementById('divPass');
